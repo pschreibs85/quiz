@@ -13,7 +13,8 @@ class Quiz extends React.Component {
 		this.state={'step':0}
 		console.log(this.state)
 	}
-	incStep(){
+	incStep(data){
+		console.log(data)
 		if (this.state.step!==mockData.questions.length-1){
 			this.setState({'step': this.state.step+1})
 		}else{
