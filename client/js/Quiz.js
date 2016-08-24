@@ -7,7 +7,7 @@ mockData.questions.forEach(data=>{
 	data.options.splice(Math.floor(data.options.length*Math.random()), 0, data.answer)
 })
 
-class Questions extends React.Component {
+class Quiz extends React.Component {
 	constructor(){
 		super()
 		this.state={'step':0}
@@ -28,4 +28,4 @@ class Questions extends React.Component {
 	}
 }
 
-module.exports = Questions
+module.exports = Quiz
