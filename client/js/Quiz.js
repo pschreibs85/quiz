@@ -22,7 +22,12 @@ class Quiz extends React.Component {
 	}
 	render(){
 		return (
-			<Question question={mockData.questions[this.state.step]} next={this.incStep.bind(this)} />
+			<Question 
+			question={mockData.questions[this.state.step].question}
+			next={this.incStep.bind(this)} 
+			answer = {mockData.questions[this.state.step].answer}
+			options = {mockData.questions[this.state.step].options}
+			/>
 			
 		)
 	}
