@@ -1,7 +1,7 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 const mockData = require('./mock-data')
-const Question = require('./question')
+const Question = require('./Question')
 
 mockData.questions.forEach(data=>{
 	data.options.splice(Math.floor(data.options.length*Math.random()), 0, data.answer)
